@@ -1,24 +1,21 @@
-# README
+**このサービスを作った理由**
+一人暮らしを始めた方におすすめの料理を提供するサービスです
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**ターゲットユーザー**
+一人暮らしで自炊を始め、何を作ればいいか悩んでいる方
 
-Things you may want to cover:
+**ユーザーが抱える課題**
+・栄養が偏った食事になる
 
-* Ruby version
+**解決方法**
+・必要な要素を選択して、それに沿った料理を紹介する
 
-* System dependencies
+**実装した機能**
+・要素を選択して、おすすめの料理を紹介
+・ユーザーの検索履歴
+・お問い合わせフォーム
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+**アプリケーション内で使用している技術一覧**
+・Ruby on Rails
+・Docker
+・MySQL

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'select/top'
+  get 'select', to: 'select#top'
   root  'home#top'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
