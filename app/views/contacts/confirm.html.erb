@@ -1,0 +1,35 @@
+<div class="container-mt-5">
+  <div class="row">
+    <div class="col-6 mx-auto">
+      <table>
+        <tbody>
+          <tr>
+            <td class="text-center label-color" style="width: 30%;">お名前</td>
+            <td class='label-color'><%= @contact.name %></td>
+          </tr>
+          <tr>
+            <td class="text-center label-color">メッセージ</td>
+            <td  class='label-color' style="white-space: pre-wrap;"><%= @contact.message %></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <%= form_for(@contact) do |f| %>
+        <%= f.hidden_field :name %>
+        <%= f.hidden_field :email %>
+        <%= f.hidden_field :phone_number %>
+        <%= f.hidden_field :subject %>
+        <%= f.hidden_field :message %>
+        <div><%= f.submit '送信' %></div>
+      <% end %>
+      <%= form_for @contact, url: back_path do |f| %>
+        <%= f.hidden_field :name %>
+        <%= f.hidden_field :email %>
+        <%= f.hidden_field :phone_number %>
+        <%= f.hidden_field :subject %>
+        <%= f.hidden_field :message %>
+        <div><%= f.submit '入力画面に戻る' %></div>
+      <% end %>
+    </div>
+  </div>
+</div>
