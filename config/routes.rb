@@ -6,4 +6,13 @@ Rails.application.routes.draw do
   post 'contacts/confirm', to: 'contacts#confirm', as: 'confirm'
   post 'contacts/back', to: 'contacts#back', as: 'back'
   get 'done', to: 'contacts#done', as: 'done'
+
+  # :elementsの中にmemberを取り出す
+  resources :elements do #追加
+    member do #追加
+      put :select
+      put :release
+    end
+  end
+
 end
